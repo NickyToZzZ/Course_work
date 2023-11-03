@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+body {
+    background-color: #161314;
+}
+
+.header {
+    width: 100%;
+
+    .header-container {
+        width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+        .header-block-left__image {
+                transform: scale(0.6);
+            }
+        .header-block-left__image:hover {
+            cursor: pointer;
+        }  
+        
+        .header-block-right {
+            display: inline-flex;
+            justify-content: space-around;
+            .header-block-right__navigation {
+                position: relative;
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: $navigation-font-weight;
+                margin-top: 25px;
+                padding: 0 18px 0 18px;
+                .header-block-right-navigation-dropdown {
+                    @include header-block-right-navigation-dropdown-options;
+                    .header-block-right-navigation-dropdown__about {
+                        margin: 15px;
+                    }
+                }
+            }
+        .header-block-right__navigation:hover {
+                @include navigation-hover;
+            }
+        .header-block-right__button {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                font-weight: $button-font-weight;
+                border: $button-border;
+                border-radius: 10px;
+                background: none;
+            }
+        .header-block-right__button:hover {
+                @include button-hover;
+            }
+        }
+    }
+}
+
+
+

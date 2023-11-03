@@ -1,0 +1,46 @@
+@mixin header-block-right-navigation-dropdown-options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 15px 60px 15px 15px;
+    z-index: 1;
+}
+@mixin navigation-hover {
+    cursor: pointer;
+    color: #abb8c3;
+    transition: 0.4s;
+}
+@mixin button-hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    background-color: #de193a;
+    transition: 0.4s;
+}
+@mixin main-title-bottom-options {
+    position: relative;
+    transform: skewY(-10deg);
+    bottom: 140px;
+}
+@mixin problems-block-comment-options {
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+@mixin problems-block-text-options {
+    color: #f5f5f5;
+    font-size: 17px;
+    font-weight: 300;
+}
+@mixin problems-block-navigation-options {
+    font-family: Lato, sans-serif;
+    color: #de193a;
+    font-weight: 500;
+    padding: 10px 0 30px 0;
+}
+@mixin problems-block-navigation-hover-options {
+    cursor: pointer;
+    text-decoration: underline;
+}

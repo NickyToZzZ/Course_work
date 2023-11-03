@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+
+.problems {
+    width: 100%;
+    .problems-container {
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .problems-header__title {
+            text-align: center;
+            font-family: $main-text-font;
+            color: $secondary-text-color;
+            font-size: $main-font-size;
+            font-weight: 500;
+        }
+        .problems-header__comment {
+            text-align: center;
+            font-family: $main-text-font;
+            color: $main-text-color;
+            font-size: 36px;
+            font-weight: 100;
+        }
+    }
+    .problems-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        .problems-block__comment {
+            @include problems-block-comment-options;
+        }
+        .problems-block__text {
+            @include problems-block-text-options;
+        }
+        .problems-block__navigation {
+            @include problems-block-navigation-options;
+        }
+        .problems-block__navigation:hover {
+            @include problems-block-navigation-hover-options
+        }
+    }
+}
