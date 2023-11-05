@@ -32,12 +32,6 @@ body {
                 font-weight: $navigation-font-weight;
                 margin-top: 25px;
                 padding: 0 18px 0 18px;
-                .header-block-right-navigation-dropdown {
-                    @include header-block-right-navigation-dropdown-options;
-                    .header-block-right-navigation-dropdown__about {
-                        margin: 15px;
-                    }
-                }
             }
         .header-block-right__navigation:hover {
                 @include navigation-hover;

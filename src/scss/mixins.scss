@@ -1,11 +1,4 @@
-@mixin header-block-right-navigation-dropdown-options {
-    display: none;
-    position: absolute;
-    background-color: white;
-    color: black;
-    padding: 15px 60px 15px 15px;
-    z-index: 1;
-}
+
 @mixin navigation-hover {
     cursor: pointer;
     color: #abb8c3;
@@ -43,4 +36,11 @@
 @mixin problems-block-navigation-hover-options {
     cursor: pointer;
     text-decoration: underline;
+}
+@mixin marketing-info-square-options {
+    position: relative;
+    width: 250px;
+    height: 260px;
+    margin: 0 auto;
+    transform: skew(-10deg);
 }

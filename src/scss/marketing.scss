@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixins";
+
+.marketing {
+    width: 100%;
+    .marketing-container {
+        width: 1300px;
+        margin: 0 auto;
+    }
+    .marketing-block-top__title {
+        font-family: $main-text-font;
+        color: $secondary-text-color;
+        font-size: $main-font-size;
+        font-weight: bold;
+        text-align: center;
+    }
+    .marketing-block-top__main-title {
+        font-family: $main-text-font;
+        color: $main-text-color;
+        font-size: 42px;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .marketing-block-middle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .marketing-info {
+            display: flex;
+            flex-direction: column;
+            .marketing-info__square-left {
+                @include marketing-info-square-options;
+                background-color: rgb(72, 112, 210);
+            }
+            .marketing-info__square-middle {
+                @include marketing-info-square-options;
+                background-color: black;
+            }
+            .marketing-info__square-right {
+                @include marketing-info-square-options;
+                background-color: rgb(93, 131, 162);
+            }
+            .marketing-info__number {
+                font-family: $main-text-font;
+                font-size: 60px;
+                font-weight: 800;
+                -webkit-text-stroke: 1px #de193a;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+            .marketing-info__title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 32px;
+                font-weight: 100;
+                text-align: center;
+            }
+            .marketing-info__view {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                text-align: center;
+            }
+            .marketing-info__view:hover {
+                @include problems-block-navigation-hover-options;
+            }
+        }
+    }
+    .marketing-block-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 150px;
+        .marketing-block-bottom__button {
+            font-family: $main-text-font;
+            color: $secondary-text-color;
+            font-size: $main-font-size;
+            font-weight: $button-font-weight;
+            border: $button-border;
+            border-radius: 10px;
+            background: none;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .marketing-block-bottom__button:hover {
+            @include button-hover;
+        }
+    }
+}
