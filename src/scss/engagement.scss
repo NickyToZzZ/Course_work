@@ -1,0 +1,83 @@
+@import "variables";
+@import "mixins";
+
+.engagement {
+    width: 100%;
+    .engagement-container {
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .engagement-block-top{
+            .engagement-block-top__main-title {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                font-weight: bold;
+                text-align: center;
+            }
+            .engagement-block-top__secondary-title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 42px;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+        .engagement-block-middle {
+            @include grid-options;
+            .engagement-column-left {
+                grid-column: 2 / 3;
+            }
+            .engagement-column-middle {
+                grid-column: 3 / 4;
+            }
+            .engagement-column-right {
+                grid-column: 4 / 5;
+            }
+            .engagement-column__image {
+                transform: scale(0.4);
+            }
+            .engagement-column__title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 27px;
+                font-weight: 100;
+            }
+            .engagement-column__text {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: 100;
+            }
+            .engagement-column__navigation {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                font-weight: 300;
+            }
+            .engagement-column__navigation:hover {
+                @include problems-block-navigation-hover-options;
+            }
+        }
+        .engagement-block-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .engagement-block-bottom__start {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                font-weight: $button-font-weight;
+                border: $button-border;
+                border-radius: 10px;
+                background: none;
+                padding: 10px;
+                margin: 80px;
+            }
+            .engagement-block-bottom__start:hover {
+                @include button-hover;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+
+.about-us {
+    width: 100%;
+    margin-top: 50px;
+    .about-us-container {
+        width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .about-us-block-right {
+            padding: 70px;
+            .about-us-block-right__main-title {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .about-us-block-right__secondary-title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 32px;
+                font-weight: 100;
+            }
+            .about-us-block-right__text {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: 300;
+            }
+            .about-us-block-right__navigation {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                font-weight: 300;
+            }
+            .about-us-block-right__navigation:hover {
+                @include problems-block-navigation-hover-options;
+            }
+        }
+    }
+}

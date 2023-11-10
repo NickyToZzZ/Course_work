@@ -1,0 +1,66 @@
+@import "variables";
+@import "mixins";
+
+.comments {
+    width: 100%;
+    .comments-container {
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .comments-block {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            .comments-block-left {
+                display: grid;
+                grid-template-rows: 300px 40px 40px;
+                .comments-block-left__image {
+                    transform: scale(0.5);
+                    border-radius: 50%;
+                }
+                .comments-block-left__name {
+                    font-family: $main-text-font;
+                    color: $main-text-color;
+                    font-weight: 100;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .comments-block-left__job-title {
+                    font-family: $main-text-font;
+                    color: $secondary-text-color;
+                    font-weight: 100;
+                    font-size: 25px;
+                    text-align: center;
+                }
+            }
+            .comments-block-right {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 42px;
+                font-weight: 100;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                .comments-block-right__quote {
+                    color: $secondary-text-color;
+                }
+            }
+        }
+        .comments-arrows {
+            display: inline-flex;
+            margin: 0 auto;
+            .comments-arrow-left {
+                @include comments-arrow-left-options;
+            }
+            .comments-arrow-left:hover {
+                cursor: pointer;
+            }
+            .comments-arrow-right {
+                @include comments-arrow-right-options;
+            }
+            .comments-arrow-right:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
