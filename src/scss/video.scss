@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixins";
+
+.video {
+    width: 100%;
+    .video-container {
+        width: 1300px;
+        margin: 0 auto;
+        .video-block-header {
+            .video-block-header__main-title {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                font-weight: 700;
+                text-align: center;
+            }
+            .video-block-header__secondary-title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 37px;
+                font-weight: 100;
+                text-align: center;
+                padding: 0 200px 0 200px;
+            }
+        }
+        .video-block-content {
+            .video-block-content__title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: 100;
+            }
+        }
+    }
+}
