@@ -3,6 +3,7 @@
 
 .engagement {
     width: 100%;
+    margin-top: 200px;
     .engagement-container {
         width: 1300px;
         margin: 0 auto;
@@ -10,17 +11,11 @@
         flex-direction: column;
         .engagement-block-top{
             .engagement-block-top__main-title {
-                font-family: $main-text-font;
-                color: $secondary-text-color;
-                font-size: $main-font-size;
-                font-weight: bold;
+                @include main-title;
                 text-align: center;
             }
             .engagement-block-top__secondary-title {
-                font-family: $main-text-font;
-                color: $main-text-color;
-                font-size: 42px;
-                font-weight: 100;
+                @include secondary-title;
                 text-align: center;
             }
         }
@@ -49,6 +44,8 @@
                 color: $main-text-color;
                 font-size: $main-font-size;
                 font-weight: 100;
+                word-spacing: 5px;
+                line-height: 1.5;
             }
             .engagement-column__navigation {
                 font-family: $main-text-font;

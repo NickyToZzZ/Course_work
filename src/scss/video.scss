@@ -9,17 +9,11 @@
         margin: 0 auto;
         .video-block-header {
             .video-block-header__main-title {
-                font-family: $main-text-font;
-                color: $secondary-text-color;
-                font-size: $main-font-size;
-                font-weight: 700;
+                @include main-title;
                 text-align: center;
             }
             .video-block-header__secondary-title {
-                font-family: $main-text-font;
-                color: $main-text-color;
-                font-size: 37px;
-                font-weight: 100;
+                @include secondary-title;
                 text-align: center;
                 padding: 0 200px 0 200px;
             }

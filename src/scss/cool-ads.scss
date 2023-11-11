@@ -14,16 +14,10 @@
                 padding: 0 350px 0 350px;
             }
             .cool-ads-block-header__main-title {
-                font-family: $main-text-font;
-                color: $secondary-text-color;
-                font-size: $main-font-size;
-                font-weight: 600;
+                @include main-title;
             }
             .cool-ads-block-header__secondary-title {
-                font-family: $main-text-font;
-                color: $main-text-color;
-                font-size: 37px;
-                font-weight: 100;
+                @include secondary-title;
             }
         }
         .cool-ads-block-content {

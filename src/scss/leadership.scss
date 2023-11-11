@@ -3,7 +3,7 @@
 
 .leadership {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
     .leadership-container {
         width: 1300px;
         margin: 0 auto;
@@ -12,17 +12,11 @@
         .leadership-block-top {
             margin-bottom: 100px;
             .leadership-block-top__main-title {
-                font-family: $main-text-font;
-                color: $secondary-text-color;
-                font-size: $main-font-size;
-                font-weight: bold;
+                @include main-title;
                 text-align: center;
             }
             .leadership-block-top__secondary-title {
-                font-family: $main-text-font;
-                color: $main-text-color;
-                font-size: 42px;
-                font-weight: 100;
+                @include secondary-title;
                 text-align: center;
             }
         }

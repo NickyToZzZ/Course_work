@@ -12,22 +12,18 @@
         .about-us-block-right {
             padding: 70px;
             .about-us-block-right__main-title {
-                font-family: $main-text-font;
-                color: $secondary-text-color;
-                font-size: 20px;
-                font-weight: 600;
+                @include main-title;
             }
             .about-us-block-right__secondary-title {
-                font-family: $main-text-font;
-                color: $main-text-color;
-                font-size: 32px;
-                font-weight: 100;
+                @include secondary-title;
             }
             .about-us-block-right__text {
                 font-family: $main-text-font;
                 color: $main-text-color;
                 font-size: $main-font-size;
                 font-weight: 300;
+                word-spacing: 5px;
+                line-height: 1.5;
             }
             .about-us-block-right__navigation {
                 font-family: $main-text-font;

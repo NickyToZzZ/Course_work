@@ -11,17 +11,11 @@
         .problems-header {
             .problems-header__title {
                 text-align: center;
-                font-family: $main-text-font;
-                color: $secondary-text-color;
-                font-size: $main-font-size;
-                font-weight: 500;
+                @include main-title;
             }
             .problems-header__comment {
                 text-align: center;
-                font-family: $main-text-font;
-                color: $main-text-color;
-                font-size: 36px;
-                font-weight: 100;
+                @include secondary-title;
             }
         }
         .problems-content {
