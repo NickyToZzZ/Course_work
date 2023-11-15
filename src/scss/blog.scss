@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+
+.blog {
+    width: 100%;
+    .blog-container {
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .blog-block-header {
+            .blog-block-header__main-title {
+                @include main-title;
+                text-align: center;
+            }
+            .blog-block-header__secondary-title {
+                @include secondary-title;
+                text-align: center;
+                padding: 0 150px 0 150px;
+            }
+        }
+        .blog-block-content {
+            @include grid-options;
+            @include blog-column-options;
+            .blog-column__title {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: 27px;
+                font-weight: 100;
+                line-height: 1.4;
+            }
+            .blog-column__title:hover {
+                @include problems-block-navigation-hover-options;
+            }
+            .blog-column__text {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 20px;
+                font-weight: 100;
+                line-height: 1.4;
+                word-spacing: 5px;
+            }
+            .blog-column__navigation {
+                font-family: $main-text-font;
+                color: $secondary-text-color;
+                font-size: $main-font-size;
+                margin: 40px 0 0 20px;
+            }
+            .blog-column__navigation:hover {
+                @include problems-block-navigation-hover-options;
+            }
+        }
+    }
+}

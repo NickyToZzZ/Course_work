@@ -1,0 +1,74 @@
+@import "variables";
+@import "mixins";
+
+.sign-up {
+    width: 100%;
+    .sign-up-container {
+        width: 1300px;
+        margin: 0 auto;
+        .sign-up-block-first {
+            .sign-up-block__square {
+                width: 850px;
+                height: 400px;
+                background-color: #de193a;
+                margin: 0 auto;
+                position: relative;
+                z-index: -1;
+                transform: skew(-5deg);
+            }
+        }
+        .sign-up-block-second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            bottom: 410px;
+            .sign-up-block__main-title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: 600;
+            }
+            .sign-up-block__secondary-title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: 32px;
+                font-weight: 100;
+                width: 700px;
+            }
+            .sign-up-form {
+                .sign-up-form__email {
+                    width: 400px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: $main-font-size;
+                }
+                .sign-up-form__submit {
+                    width: 80px;
+                    height: 40px;
+                    background: none;
+                    border: 2px solid white;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: $main-font-size;
+                }
+                .sign-up-form__submit:hover {
+                    cursor: pointer;
+                    background-color: white;
+                    color: #de193a;
+                    transition: 0.4s;
+                }
+            }
+            .sign-up-block__title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: 600;
+            }
+            .sign-up-block__captcha {
+                transform: scale(0.6);
+            }
+        }
+    }
+}

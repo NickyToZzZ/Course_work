@@ -121,3 +121,14 @@
         grid-row: 3 / 4;
     }
 }
+@mixin blog-column-options {
+    .blog-column-left {
+        grid-column: 2 / 3;
+    }
+    .blog-column-middle {
+        grid-column: 3 / 4;
+    }
+    .blog-column-right {
+        grid-column: 4 / 5;
+    }
+}
