@@ -3,7 +3,7 @@
 
 .leadership {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 50px;
     .leadership-container {
         width: 1300px;
         margin: 0 auto;
@@ -21,12 +21,19 @@
             }
         }
         .leadership-block-content {
+            position: relative;
             @include grid-options;
             .leadership-column {
                 display: flex;
                 flex-direction: column;
                 .leadership-column__square {
                     @include leadership-column__square;
+                }
+                .leadership-column__image {
+                    position: absolute;
+                    width: 290px;
+                    height: 490px;
+                    bottom: 266px;
                 }
                 .leadership-column__name {
                     font-family: $main-text-font;

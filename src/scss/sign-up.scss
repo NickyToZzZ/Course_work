@@ -3,9 +3,11 @@
 
 .sign-up {
     width: 100%;
+    margin-top: 100px;
     .sign-up-container {
         width: 1300px;
         margin: 0 auto;
+        position: relative;
         .sign-up-block-first {
             .sign-up-block__square {
                 width: 850px;
@@ -18,11 +20,13 @@
             }
         }
         .sign-up-block-second {
+            position: absolute;
+            bottom: 20px;
+            left: 320px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
-            bottom: 410px;
+            margin: 0 auto;
             .sign-up-block__main-title {
                 font-family: $main-text-font;
                 color: $main-text-color;
@@ -67,7 +71,8 @@
                 font-weight: 600;
             }
             .sign-up-block__captcha {
-                transform: scale(0.6);
+                width: 250px;
+                height: 65px;
             }
         }
     }

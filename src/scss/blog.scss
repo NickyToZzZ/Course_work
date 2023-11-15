@@ -22,6 +22,11 @@
         .blog-block-content {
             @include grid-options;
             @include blog-column-options;
+            .blog-column__image {
+                width: 300px;
+                height: 225px;
+                cursor: pointer;
+            }
             .blog-column__title {
                 font-family: $main-text-font;
                 color: $secondary-text-color;

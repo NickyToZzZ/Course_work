@@ -3,35 +3,38 @@
 
 .connect {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 150px;
     .connect-container {
         width: 1300px;
         margin: 0 auto;
+        position: relative;
         .connect-block-square {
             width: 1150px;
             height: 400px;
             background-color: #de193a;
             margin: 0 auto;
             position: relative;
+            transform: skew(-5deg);
             z-index: -1;
         }
         .connect-block-content {
-            position: relative;
-            bottom: 300px;
+            position: absolute;
+            color: white;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            color: white;
+            gap: 20px;
+            bottom: -4px;
             .connect-column-left {
                 .connect-column__image {
-                    position: relative;
-                    right: 230px;
-                    bottom: 450px;
+                    width: 600px;
+                    height: 520px;
                 }
             }
             .connect-column-right {
-                position: relative;
-                right: 200px;
-                bottom: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 75px;
                 .connect-column__main-title {
                     font-family: $main-text-font;
                     font-size: 20px;
@@ -41,11 +44,13 @@
                     font-family: $main-text-font;
                     font-size: 32px;
                     font-weight: 100;
+                    padding-right: 250px;
                 }
                 .connect-column__navigation {
                     font-family: $main-text-font;
                     font-size: $main-font-size;
                     font-weight: 100;
+                    width: 170px;
                     border: 2px solid white;
                     border-radius: 10px;
                     text-align: center;
