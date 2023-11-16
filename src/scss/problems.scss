@@ -39,9 +39,14 @@
                 @include problems-block-navigation-options;
             }
             .problems-block__navigation:hover {
-                @include problems-block-navigation-hover-options
+                @include problems-block-navigation-hover-options;
             }
         }
     }
+}
 
+@media screen and (max-width: 1300px) {
+    .problems-container {
+        display: none;
+    }
 }
