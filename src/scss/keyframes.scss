@@ -1,0 +1,9 @@
+@keyframes border-animation {
+    0% {border: 2px solid #de193a;}
+    50% {border: 2px solid white;}
+    100% {border: 2px solid #161314;}
+}
+@keyframes arrow-animation {
+    from {color: #161314;}
+    to {color: #de193a;}
+}

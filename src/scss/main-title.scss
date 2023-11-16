@@ -1,32 +1,41 @@
 @import "variables";
 @import "mixins";
+@import "keyframes";
 
 .main-title {
     width: 100%;
-
     .main-title-container {
         width: 1300px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        .main-title-block__left {
-            width: 200px;
-            height: 250px;
-            background-color: white;
-            margin: 0 auto;
-            text-align: center;
+        .main-title-block-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .main-title-block-left__title {
+                font-family: $main-text-font;
+                color: $main-text-color;
+                font-size: $main-font-size;
+                font-weight: 100;
+            }
+            .main-title-block-left__arrow {
+                transform: scale(2);
+                animation: arrow-animation 1s infinite;
+            }
+            .main-title-block-left__video {
+                animation: border-animation 2s infinite reverse;
+                border-radius: 5px;
+            }
         }
-
         .main-title-block-right {
-
-            .main-title__top {
+            .main-title-block-right__top {
                 font-family: $main-text-font;
                 font-size: $main-title-font-size-top;
                 color: $secondary-text-color;
                 font-weight: $main-title-font-weight-top;
             }
-            .main-title__bottom {
+            .main-title-block-right__bottom {
                 font-family: $main-text-font;
                 font-size: $main-title-font-size-bottom;
                 color: $main-text-color;

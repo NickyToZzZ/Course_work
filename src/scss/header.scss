@@ -15,7 +15,8 @@ body {
         grid-template-columns: 1fr 3fr;
 
         .header-block-left__image {
-                transform: scale(0.6);
+                width: 200px;
+                height: 50px;
             }
         .header-block-left__image:hover {
             cursor: pointer;
@@ -51,6 +52,7 @@ body {
         }
     }
 }
+
 
 
 
