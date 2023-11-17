@@ -45,8 +45,4 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .problems-container {
-        display: none;
-    }
-}
+@include problems-section-adaptive;

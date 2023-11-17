@@ -238,3 +238,31 @@
         }
     }
 }
+@mixin problems-section-adaptive {
+    @media screen and (max-width: 1300px) {
+        .problems .problems-container {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .problems .problems-container .problems-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .problems .problems-container .problems-content .problems-block__navigation {
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .problems .problems-container .problems-header .problems-header__comment {
+            font-size: 30px;
+        }
+        .problems .problems-container .problems-content .problems-block__comment {
+            font-size: 18px;
+        }
+        .problems .problems-container .problems-content .problems-block__text {
+            font-size: 15px;
+        }
+    }
+}
