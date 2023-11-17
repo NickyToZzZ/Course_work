@@ -17,7 +17,8 @@
             justify-content: center;
             .main-title-block-left__video {
                 transform: skewY(-10deg);
-                border-radius: 5px;
+                width: 500px;
+                height: 350px;
             }
         }
         .main-title-block-right {
@@ -38,8 +39,4 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .main-title .main-title-container {
-        display: none;
-    }
-}
+@include main-title-section-adaptive;

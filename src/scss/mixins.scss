@@ -177,3 +177,64 @@
         }
     }
 }
+@mixin main-title-section-adaptive {
+    @media screen and (max-width: 1300px) {
+        .main-title .main-title-container {
+            width: 95%;
+        }
+        .main-title .main-title-container .main-title-block-left .main-title-block-left__video {
+            width: 450px;
+            height: 325px;
+        }
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__top {
+            font-size: 35px;
+        }
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__bottom {
+            font-size: 120px;
+        }
+    }
+    @media screen and (max-width: 1010px) {
+        .main-title .main-title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-title .main-title-container .main-title-block-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__top {
+            text-align: center;
+        }
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__bottom {
+            text-align: center;
+        }
+        .main-title .main-title-container .main-title-block-left .main-title-block-left__video {
+            width: 500px;
+            height: 350px;
+        }
+    }
+    @media screen and (max-width: 560px) {
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__top {
+            font-size: 27px;
+        }
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__bottom {
+            font-size: 90px;
+        }
+        .main-title .main-title-container .main-title-block-left .main-title-block-left__video {
+            width: 300px;
+            height: 200px;
+        }
+    }
+    @media screen and (max-width: 390px) {
+        .main-title .main-title-container .main-title-block-right .main-title-block-right__bottom {
+            font-size: 65px;
+        }
+        .main-title .main-title-container .main-title-block-left .main-title-block-left__video {
+            width: 250px;
+            height: 175px;
+        }
+    }
+}
