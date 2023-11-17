@@ -47,12 +47,11 @@ body {
             .header-block-right__button:hover {
                 @include button-hover;
             }
+            .header-block-right__hamburger {
+                display: none;
+            }
         }
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .header-container {
-        display: none;
-    }
-}
+@include header-section-adaptive;
