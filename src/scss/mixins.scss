@@ -393,3 +393,45 @@
         }
     }
 }
+@mixin engagement-section-adaptive {
+    @media screen and (max-width: 1300px) {
+        .engagement .engagement-container {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .engagement .engagement-container .engagement-block-middle {
+            display: flex;
+            flex-direction: column;
+        }
+        .engagement .engagement-container .engagement-block-middle .engagement-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .engagement .engagement-container .engagement-block-top {
+            margin-bottom: 10px;
+        }
+        .engagement .engagement-container .engagement-block-top .engagement-block-top__main-title {
+            font-size: 15px;
+        }
+        .engagement .engagement-container .engagement-block-top .engagement-block-top__secondary-title {
+            font-size: 25px;
+        }
+        .engagement .engagement-container .engagement-block-middle .engagement-column {
+            padding: 30px;
+        }
+        .engagement .engagement-container .engagement-block-middle .engagement-column .engagement-column__title {
+            font-size: 23px;
+        }
+        .engagement .engagement-container .engagement-block-middle .engagement-column .engagement-column__text {
+            font-size: 15px;
+        }
+        .engagement .engagement-container .engagement-block-middle .engagement-column .engagement-column__navigation {
+            font-size: 15px;
+        }
+    }
+}
