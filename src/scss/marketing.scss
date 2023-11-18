@@ -6,7 +6,6 @@
     .marketing-container {
         width: 1300px;
         margin: 0 auto;
-        border: 2px solid blue;
     }
     .marketing-block-top__title {
         @include main-title;
@@ -37,12 +36,9 @@
                 background-color: rgb(93, 131, 162);
                 z-index: -1;
             }
-            .marketing-block-middle__image {
-                position: absolute;
+            .marketing-info-square__image {
                 width: 350px;
                 height: 250px;
-                left: 50px;
-                bottom: 362px;
             }
             .marketing-info__number {
                 font-family: $main-text-font;
@@ -86,5 +82,11 @@
         .marketing-block-bottom__button:hover {
             @include button-hover;
         }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .marketing .marketing-container {
+        width: 95%;
     }
 }
