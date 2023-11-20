@@ -435,3 +435,34 @@
         }
     }
 }
+@mixin video-section-adaptive {
+    @media screen and (max-width: 1300px) {
+        .video .video-container {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .video .video-container .video-block-header .video-block-header__secondary-title {
+            padding: 0 50px 0 50px;
+            font-size: 30px;
+        }
+        .video .video-container .video-block-header .video-block-header__main-title {
+            font-size: 15px;
+        }
+        .video .video-container .video-block-content .video-block-content__source {
+            height: 500px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .video .video-container .video-block-header .video-block-header__secondary-title {
+        padding: 0 20px 0 20px;
+        font-size: 25px;
+        }
+        .video .video-container .video-block-content .video-block-content__source {
+            height: 300px;
+        }
+        .video .video-container .video-block-content .video-block-content__title {
+            font-size: 15px;
+        }
+    }
+}
