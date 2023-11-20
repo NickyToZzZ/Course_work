@@ -39,6 +39,9 @@
             .marketing-info-square__image {
                 width: 350px;
                 height: 250px;
+                position: relative;
+                top: 10px;
+                right: 50px;
             }
             .marketing-info__number {
                 font-family: $main-text-font;
