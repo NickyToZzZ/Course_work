@@ -200,7 +200,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
         .main-title .main-title-container .main-title-block-right .main-title-block-right__top {
             text-align: center;
@@ -219,6 +218,7 @@
         }
         .main-title .main-title-container .main-title-block-right .main-title-block-right__bottom {
             font-size: 90px;
+            padding-top: 30px;
         }
         .main-title .main-title-container .main-title-block-left .main-title-block-left__video {
             width: 300px;
@@ -228,6 +228,7 @@
     @media screen and (max-width: 390px) {
         .main-title .main-title-container .main-title-block-right .main-title-block-right__bottom {
             font-size: 65px;
+            padding-top: 55px;
         }
         .main-title .main-title-container .main-title-block-left .main-title-block-left__video {
             width: 250px;
@@ -776,6 +777,154 @@
         }
         .leadership .leadership-container .leadership-block-content .leadership-column .leadership-column__name {
             font-size: 30px;
+        }
+    }
+}
+@mixin sign-up-section-adaptive {
+    @media screen and (max-width: 1300px) {
+        .sign-up .sign-up-container {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 910px) {
+        .sign-up {
+            margin-top: 50px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square {
+            width: 600px;
+            height: 350px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__main-title {
+            font-size: 15px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__secondary-title {
+            font-size: 25px;
+            width: 500px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-form .sign-up-form__email {
+            width: 200px;
+            height: 20px;
+            font-size: 15px
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-form .sign-up-form__submit {
+            width: 70px;
+            height: 30px;
+            font-size: 15px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__title {
+            font-size: 15px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__captcha {
+            width: 150px;
+            height: 45px;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square {
+            width: 400px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__secondary-title {
+            font-size: 20px;
+            width: 350px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square {
+            width: 250px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__secondary-title {
+            font-size: 18px;
+            width: 200px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-block__title {
+            font-size: 12px;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square .sign-up-form .sign-up-form__submit {
+            margin-top: 5px;
+        }
+    }
+}
+@mixin connect-section-adaptive {
+    @media screen and (max-width: 1300px) {
+        .connect .connect-container {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 1100px) {
+        .connect {
+            margin-top: 100px;
+        }
+        .connect .connect-container .connect-block-square {
+            width: 750px;
+            height: 350px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__image {
+            width: 420px;
+            height: 420px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__main-title {
+            font-size: 15px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__secondary-title {
+            font-size: 25px;
+            padding-right: 75px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__navigation {
+            font-size: 15px;
+            font-weight: 100;
+            width: 120px;
+        }
+    }
+    @media screen and (max-width: 810px) {
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__image {
+            display: none;
+        }
+        .connect .connect-container .connect-block-square {
+            width: 450px;
+            height: 350px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content {
+            grid-template-columns: 1fr;
+            gap: 0;
+            padding: 60px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__secondary-title {
+            padding-right: 0;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__main-title {
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .connect {
+            margin-top: 50px;
+        }
+        .connect .connect-container .connect-block-square {
+            width: 250px;
+            height: 250px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content {
+            padding: 25px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__main-title {
+            font-size: 12px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__secondary-title {
+            font-size: 23px;
+        }
+        .connect .connect-container .connect-block-square .connect-block-content .connect-column .connect-column__navigation {
+            font-size: 12px;
+            width: 80px;
         }
     }
 }

@@ -15,6 +15,9 @@
                 background-color: #de193a;
                 margin: 0 auto;
                 position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
         .sign-up-block-second {
@@ -75,8 +78,4 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .sign-up .sign-up-container {
-        width: 95%;
-    }
-}
+@include sign-up-section-adaptive;
