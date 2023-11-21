@@ -30,10 +30,10 @@
                     @include leadership-column__square;
                 }
                 .leadership-column__image {
-                    position: absolute;
+                    position: relative;
                     width: 290px;
                     height: 490px;
-                    bottom: 266px;
+                    bottom: 40px;
                 }
                 .leadership-column__name {
                     font-family: $main-text-font;
@@ -66,8 +66,4 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .leadership .leadership-container {
-        width: 95%;
-    }
-}
+@include leadership-section-adaptive;

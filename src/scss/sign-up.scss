@@ -15,14 +15,11 @@
                 background-color: #de193a;
                 margin: 0 auto;
                 position: relative;
-                z-index: -1;
-                transform: skew(-5deg);
             }
         }
         .sign-up-block-second {
             position: absolute;
             bottom: 20px;
-            left: 320px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -81,11 +78,5 @@
 @media screen and (max-width: 1300px) {
     .sign-up .sign-up-container {
         width: 95%;
-    }
-    .sign-up .sign-up-container .sign-up-block-first .sign-up-block__square {
-        width: 700px;
-    }
-    .sign-up .sign-up-container .sign-up-block-second {
-        left: 210px;        
     }
 }

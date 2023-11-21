@@ -21,27 +21,22 @@
         grid-template-columns: repeat(3, 1fr);
         .marketing-info {
             position: relative;
-            .marketing-info__square-left {
+            .marketing-info-square-left {
                 @include marketing-info-square-options;
                 background-color: rgb(72, 112, 210);
-                z-index: -1;
             }
-            .marketing-info__square-middle {
+            .marketing-info-square-middle {
                 @include marketing-info-square-options;
                 background-color: black;
-                z-index: -1;
             }
-            .marketing-info__square-right {
+            .marketing-info-square-right {
                 @include marketing-info-square-options;
                 background-color: rgb(93, 131, 162);
-                z-index: -1;
             }
             .marketing-info-square__image {
-                width: 350px;
-                height: 250px;
                 position: relative;
-                top: 10px;
-                right: 50px;
+                width: 330px;
+                top: 11px;
             }
             .marketing-info__number {
                 font-family: $main-text-font;
@@ -88,8 +83,4 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .marketing .marketing-container {
-        width: 95%;
-    }
-}
+@include marketing-section-adaptive;
